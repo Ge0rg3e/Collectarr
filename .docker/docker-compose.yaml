@@ -1,9 +1,30 @@
 version: '3.6'
+
 services:
     colectarr:
-        image: ge0rg3e/colectarr:latest
+        build: .
         ports:
             - 2222:2222 # Client
             - 3333:3333 # Express Server
-            - 5432:5432 # Postgres
-            - 8080:8080 # Hasura
+
+    postgres:
+        image: postgres:15
+        restart: always
+        volumes:
+            - colectarr_data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_PASSWORD: postgrespassword
+
+    hasura:
+        image: hasura/graphql-engine:v2.29.0
+        ports:
+            - 4444:8080
+        restart: always
+        environment:
+            HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+            PG_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+            HASURA_GRAPHQL_DEV_MODE: true
+            HASURA_GRAPHQL_CONSOLE: true
+
+volumes:
+    colectarr_data:
