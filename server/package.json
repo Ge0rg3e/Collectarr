@@ -1,0 +1,52 @@
+{
+	"name": "server",
+	"version": "0.1.8",
+	"scripts": {
+		"dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+		"start": "ts-node src/index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ge0rg3e/Collectarr.git"
+	},
+	"author": "Ge0rg3e",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Ge0rg3e/Collectarr/issues"
+	},
+	"homepage": "https://github.com/Ge0rg3e/Collectarr#readme",
+	"dependencies": {
+		"body-parser": "1.20.2",
+		"cors": "2.8.5",
+		"express": "4.18.2",
+		"express-fileupload": "1.4.0",
+		"node-vibrant": "3.2.1-alpha.1",
+		"ts-node": "10.9.1",
+		"ts-node-dev": "2.0.0"
+	},
+	"devDependencies": {
+		"@types/cors": "2.8.13",
+		"@types/express": "4.17.17",
+		"@types/express-fileupload": "1.4.1"
+	},
+	"prettier": {
+		"$schema": "http://json.schemastore.org/prettierrc",
+		"endOfLine": "lf",
+		"printWidth": 200,
+		"quoteProps": "as-needed",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.yml",
+				"options": {
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
+	}
+}

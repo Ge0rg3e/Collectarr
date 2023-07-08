@@ -1,0 +1,33 @@
+body {
+    animation: _fadeIn 0.5s forwards;
+}
+
+.page-body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page-container {
+    margin-left: 250px;
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+}
+
+[class^='page-'] {
+    animation: _fadeIn 0.5s forwards;
+}
+
+@keyframes _fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

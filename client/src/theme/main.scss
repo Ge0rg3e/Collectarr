@@ -1,0 +1,83 @@
+@import './components/dialogs/edit-post.scss';
+@import './components/sidebar.scss';
+@import './components/poster.scss';
+@import './components/header.scss';
+@import './components/page.scss';
+@import './pages/notFound.scss';
+@import './pages/library.scss';
+@import './pages/account.scss';
+@import './pages/search.scss';
+@import './pages/login.scss';
+@import './pages/post.scss';
+@import './pages/home.scss';
+
+@font-face {
+	font-family: 'Sohne';
+	src: url('/fonts/sohne.woff2') format('woff2-variations');
+	font-weight: 1 1000;
+	font-display: block;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #5b43f5;
+	border-radius: 10px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 14px !important;
+	font-weight: 400;
+}
+
+.MuiPaper-root {
+	background-color: #171c28 !important;
+	background-image: none !important;
+
+	.MuiButtonBase-root {
+		i {
+			margin-right: 10px;
+			font-size: 17px;
+		}
+	}
+}
+
+.css-9425fu-MuiOutlinedInput-notchedOutline {
+	border-color: #30363d !important;
+}
+
+textarea {
+	border: 1.5px solid #30363d;
+	border-radius: 5px;
+	background: none;
+	color: #fcfdfd;
+	outline: none;
+	resize: none;
+	padding: 10px;
+	width: 100%;
+}
+
+.w-md-editor {
+	background-color: #10121c !important;
+
+	.w-md-editor-toolbar {
+		border-bottom-color: #30363d !important;
+		background-color: transparent !important;
+	}
+
+	.wmde-markdown {
+		background-color: transparent;
+	}
+}

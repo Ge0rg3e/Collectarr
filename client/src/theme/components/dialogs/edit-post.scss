@@ -1,0 +1,42 @@
+.dialog-edit-post {
+	.MuiPaper-root {
+		max-width: 700px;
+		height: 400px;
+	}
+
+	.MuiTabs-root {
+		border-right: 1px solid #30363d;
+		margin-left: -23px;
+		max-width: 130px;
+		min-width: 135px;
+		height: 100%;
+
+		.MuiButtonBase-root {
+			justify-content: flex-start;
+			min-height: 50px;
+			width: 100%;
+
+			.MuiTab-iconWrapper {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.tab-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+		padding: 5px;
+		width: 100%;
+
+		&.tab-poster {
+			justify-content: center;
+			align-items: center;
+
+			.MuiButtonBase-root {
+				margin-top: 10px;
+				max-width: 230px;
+			}
+		}
+	}
+}

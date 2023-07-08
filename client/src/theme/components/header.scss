@@ -1,0 +1,35 @@
+.component-header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    width: 85%;
+    right: 1%;
+    top: 1%;
+
+    .MuiAvatar-root {
+        background-color: #171c28;
+        color: #fcfdfd;
+    }
+
+    .search {
+        background-color: #171c28;
+        border-radius: 10px;
+        width: 500px;
+
+        .MuiInputBase-root {
+            height: 100%;
+            width: 96.5%;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+
+        i {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.component-sidebar {
+    position: fixed;
+    background-color: #10121c;
+    padding: 16px;
+    height: 100%;
+    width: 250px;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        line-height: 19px;
+        column-gap: 10px;
+        font-weight: 600;
+        color: #e9e9ed;
+        font-size: 19px;
+    }
+
+    .navs {
+        margin-top: 30px;
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .MuiCircularProgress-root {
+                scale: 0.5;
+            }
+        }
+
+        .space {
+            width: 100%;
+            height: 20px;
+        }
+
+        .entry {
+            display: flex;
+            position: relative;
+            align-items: center;
+            line-height: 16px;
+            font-size: 16px;
+            column-gap: 10px;
+            color: #9a9fb9;
+            cursor: pointer;
+            padding: 8px;
+            width: 100%;
+
+            i {
+                line-height: 19px;
+                font-size: 19px;
+                margin-right: 5px;
+                max-width: 15px;
+            }
+
+            &:hover,
+            &.active {
+                color: #5b43f5;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: #5b43f5;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 3px;
+                    left: -6%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        width: 100%;
+        bottom: 1%;
+        left: 0;
+
+        .github {
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .version {
+            font-size: 15px;
+        }
+    }
+}

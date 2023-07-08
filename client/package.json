@@ -1,0 +1,75 @@
+{
+	"name": "client",
+	"private": true,
+	"version": "0.1.8",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port 2222",
+		"start": "serve -s -l 2222 dist",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@apollo/client": "3.7.14",
+		"@emotion/react": "11.11.0",
+		"@emotion/styled": "11.11.0",
+		"@mui/lab": "5.0.0-alpha.129",
+		"@mui/material": "5.12.3",
+		"@uiw/react-md-editor": "3.22.0",
+		"axios": "1.4.0",
+		"dayjs": "1.11.7",
+		"dotenv": "16.0.3",
+		"path": "0.12.7",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-hot-toast": "2.4.1",
+		"react-router-dom": "6.11.1",
+		"sass": "1.62.1",
+		"serve": "14.2.0",
+		"yup": "1.2.0"
+	},
+	"devDependencies": {
+		"@types/draft-js": "0.11.10",
+		"@types/node": "20.1.0",
+		"@types/react": "18.0.28",
+		"@types/react-dom": "18.0.11",
+		"@typescript-eslint/eslint-plugin": "5.57.1",
+		"@typescript-eslint/parser": "5.57.1",
+		"@vitejs/plugin-react": "4.0.0",
+		"eslint": "8.38.0",
+		"eslint-plugin-react-hooks": "4.6.0",
+		"eslint-plugin-react-refresh": "0.3.4",
+		"typescript": "5.0.2",
+		"vite": "4.3.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ge0rg3e/Collectarr.git"
+	},
+	"license": "ISC",
+	"author": "Ge0rg3e",
+	"bugs": {
+		"url": "https://github.com/Ge0rg3e/Collectarr/issues"
+	},
+	"homepage": "https://github.com/Ge0rg3e/Collectarr#readme",
+	"prettier": {
+		"$schema": "http://json.schemastore.org/prettierrc",
+		"endOfLine": "lf",
+		"printWidth": 100,
+		"quoteProps": "as-needed",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.yml",
+				"options": {
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
+	}
+}

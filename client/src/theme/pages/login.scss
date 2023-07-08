@@ -1,0 +1,29 @@
+.page-login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 0;
+	margin-top: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+
+	.form {
+		display: flex;
+		background-color: #10121c;
+		flex-direction: column;
+		border-radius: 10px;
+		padding: 20px;
+		height: 255px;
+		width: 400px;
+
+		.MuiTextField-root {
+			margin-bottom: 20px;
+		}
+
+		.MuiButtonBase-root {
+			margin-top: 30px;
+			height: 60px;
+		}
+	}
+}

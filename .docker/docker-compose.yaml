@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+    colectarr:
+        image: ge0rg3e/colectarr:latest
+        ports:
+            - 2222:2222 # Client
+            - 3333:3333 # Express Server
+            - 5432:5432 # Postgres
+            - 8080:8080 # Hasura

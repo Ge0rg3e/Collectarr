@@ -1,0 +1,17 @@
+package-lock.json
+lerna-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+npm-debug.log*
+node_modules
+.vscode/*
+uploads/
+dist-ssr
+uploads/
+*.local
+*.log
+logs
+.env
+dist
+

@@ -1,0 +1,37 @@
+.page-library {
+	.entrys {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		flex-wrap: wrap;
+		width: 100%;
+		gap: 33px;
+
+		.entry {
+			transition: scale 0.2s ease-in-out;
+			border-radius: 5px;
+			cursor: pointer;
+			height: 252px;
+			width: 200px;
+
+			.content {
+				margin-top: 10px;
+				.title {
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					width: 200px;
+				}
+
+				.tags {
+					color: rgba(#fcfdfd, 0.5);
+					font-weight: 400;
+				}
+			}
+
+			&:hover {
+				scale: 1.02;
+			}
+		}
+	}
+}
